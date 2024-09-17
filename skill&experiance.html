@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    dhgtedg
+    <main>
+        <!-- experiance box -->
+      <h1 class="text-white font-bold text-4xl flex justify-center"><img src="img/skills.png" width="45">&nbsp;Experiance</h1>
+      <div class="text-white border border-gray-700 m-3 md:p-8 p-5 rounded">
+        <div class="flex justify-between">
+        <p class="text-2xl mb-2">Summer Internship</p>
+        <i class="text-gray-400">SEP - 2022</i>
+        </div>
+        <p class="text-gray-500">INFOLABZ IT Services PVT. LTD.</p>
+        <p class="text-gray-600 mb-5">I completed my 15 Days offline internship in INFOLABZ on my 5th semester of Diploma course. During this internship I learnt python and API handling as well as worked on architecture of Django framework. I also learnt the analog sensors using Arduino. I also made a mini projects on python which fetch the API the display the data, another one is group project IOT based, using arduino and sensors.</p>
+        <a href="#" class="text-blue-400">Certificate</a>
+      </div>
+
+      <!-- skills box -->
+      <h1 class="text-white font-bold text-4xl flex justify-center mt-10"><img src="img/skills.png" width="45">&nbsp;Skills</h1>
+   <p class="text-white text-1xl mt-2 mb-1 ml-2">PROGRAMMING LANGUAGE</p>
+   <div id="progdiv" class="flex flex-wrap ml-3">
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">C Programming</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">JAVA</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Data Structure</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Object Orianted Programming(OOPs)</p>
+       </div>
+       <p class="text-white text-1xl mt-5 mb-1 ml-2">FRONTEND</p>
+   <div id="frontdiv" class="flex flex-wrap ml-3">
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">HTML5</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">CSS3</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">JavaScript</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">AJAX</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Jquary</p>
+<p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Bootstrap</p>
+<p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">TailwindCSS</p>
+<p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">GSAP</p>
+       </div>
+
+       <p class="text-white text-1xl mt-5 mb-1 ml-2">BACKEND</p>
+   <div id="backdiv" class="flex flex-wrap ml-3">
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Node.js</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Express.js</p>
+       </div>
+
+       <p class="text-white text-1xl mt-5 mb-1 ml-2">DATABASE</p>
+   <div id="datadiv" class="flex flex-wrap ml-3">
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">MySQL</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">MongoDB</p>
+       </div>
+
+       <p class="text-white text-1xl mt-5 mb-1 ml-2">OTHER TOOLS</p>
+   <div id="tooldiv" class="flex flex-wrap ml-3">
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Git</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">GitHub</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Msword</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">Power Point</p>
+    <p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">ChatGPT</p>
+       </div>
+    </main>
+
+    <script>
+        
+    for(let i = 0; i < toolarr.length; i++) {
+      tooldiv.innerHTML += `<p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">${toolarr[i]}</p>`;
+    }
+    </script>
 </body>
+
 </html>
