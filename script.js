@@ -29,8 +29,15 @@ $(document).ready(function () {
     img.src = "img/artimg.png";
   })
 
+  // introduction page
+  $('.intro').click(() => {
+    mobileMenu.classList.toggle('hidden');
+  })
+
+  // education page
   $('.edu').click(() => {
     $(div2).load('index.html #div2', () => {
+      mobileMenu.classList.toggle('hidden');
       main();
     })
   })
@@ -38,6 +45,7 @@ $(document).ready(function () {
   // skill & experiance page changer
   $('.skill').click(function () {
     $(div2).load('skill&experiance.html', () => {
+      mobileMenu.classList.toggle('hidden');
       main();
     })
   })
@@ -45,6 +53,7 @@ $(document).ready(function () {
   // project page
   $('.project').click(function () {
     $(div2).load('project.html', () => {
+      mobileMenu.classList.toggle('hidden');
       main();
     })
   })
@@ -52,6 +61,7 @@ $(document).ready(function () {
   // contact page
   $('.contact').click(function () {
     $(div2).load('project.html', () => {
+      mobileMenu.classList.toggle('hidden');
       main();
     })
   })
