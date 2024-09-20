@@ -1,37 +1,60 @@
-$(document).ready(function() {
-let img = document.querySelector('#nirmalimg');
-let div2 = document.querySelector('#div2');
+$(document).ready(function () {
+  let img = document.querySelector('#nirmalimg');
+  let div2 = document.querySelector('#div2');
+  let emailbtn = document.querySelector('#emailbtn');
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
 
-// for navigation bar
-const menuBtn = document.getElementById('menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+  // mail setter
+  emailbtn.addEventListener("click", function() {
+    const email = "nirmalprajapati727@gmail.com";
+    const subject = "contact to nirmal from there portfolio";
+    const body = "";
 
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
-img.addEventListener('mouseover', () => {
-  img.src = "img/realimg1.png";
-})
+    window.location.href = mailtoLink;
+  });
 
-img.addEventListener('mouseout', () => {
-  img.src ="img/artimg.png";
-})
 
-// page changer
-  $('.skill').click(function() {
-    $(div2).load('skill&experiance.html', () => {
-      console.log("sfvs")
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+
+  img.addEventListener('mouseover', () => {
+    img.src = "img/realimg1.png";
+  })
+
+  img.addEventListener('mouseout', () => {
+    img.src = "img/artimg.png";
+  })
+
+  $('.edu').click(() => {
+    $(div2).load('index.html #div2', () => {
       main();
     })
-    })
-
-    $('.edu').click(() => {
-      $(div2).load('index.html #div2', () => {
-        main();
-      })
-    })
-
-
-    
   })
+
+  // skill & experiance page changer
+  $('.skill').click(function () {
+    $(div2).load('skill&experiance.html', () => {
+      main();
+    })
+  })
+
+  // project page
+  $('.project').click(function () {
+    $(div2).load('project.html', () => {
+      main();
+    })
+  })
+
+  // contact page
+  $('.contact').click(function () {
+    $(div2).load('project.html', () => {
+      main();
+    })
+  })
+
+
+})
