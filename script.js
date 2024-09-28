@@ -22,7 +22,7 @@ $(document).ready(function () {
   });
 
   img.addEventListener('mouseover', () => {
-    img.src = "img/realimg1.png";
+    img.src = "img/realimg.png";
   })
 
   img.addEventListener('mouseout', () => {
@@ -36,10 +36,10 @@ $(document).ready(function () {
 
   // education page
   $('.edu').click(() => {
-    $(div2).load('index.html #div2', () => {
+    $(div2).load('education.html', () => {
       mobileMenu.classList.toggle('hidden');
       main();
-    })
+    })  
   })
 
   // skill & experiance page changer
@@ -58,9 +58,9 @@ $(document).ready(function () {
     })
   })
 
-  // contact page
+  // amout me page
   $('.contact').click(function () {
-    $(div2).load('project.html', () => {
+    $(div2).load('aboutme.html', () => {
       mobileMenu.classList.toggle('hidden');
       main();
     })
