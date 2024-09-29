@@ -16,7 +16,7 @@ nav {
 #div1 {
   height: 100%;
   padding: 80px 5px 100px 5px;
-  background-color: rgb(25, 38, 51);
+  background-image: url('img/backimg.png');
 }
 
 #nirmalimg {
