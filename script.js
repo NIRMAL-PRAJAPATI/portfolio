@@ -37,32 +37,32 @@ $(document).ready(function () {
   // education page
   $('.edu').click(() => {
     $(div2).load('education.html', () => {
-      main();
       mobileMenu.classList.toggle('hidden');
+      main();
     })  
   })
 
   // skill & experiance page changer
   $('.skill').click(function () {
     $(div2).load('skill&experiance.html', () => {
-      main();
       mobileMenu.classList.toggle('hidden');
+      main();
     })
   })
 
   // project page
   $('.project').click(function () {
     $(div2).load('project.html', () => {
-      main();
       mobileMenu.classList.toggle('hidden');
+      main();
     })
   })
 
   // amout me page
   $('.contact').click(function () {
     $(div2).load('aboutme.html', () => {
-      main();
       mobileMenu.classList.toggle('hidden');
+      main();
     })
   })
 
