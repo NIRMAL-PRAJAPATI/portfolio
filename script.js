@@ -5,6 +5,13 @@ $(document).ready(function () {
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
+  // see image indication
+  let indication = document.querySelector('#seeImageIndication');
+
+  setTimeout(() => {
+    indication.style.display = 'none';
+  }, 7000);
+
   // mail setter
   emailbtn.addEventListener("click", function() {
     const email = "nirmalprajapati727@gmail.com";
@@ -21,12 +28,8 @@ $(document).ready(function () {
     mobileMenu.classList.toggle('hidden');
   });
 
-  img.addEventListener('mouseover', () => {
+  img.addEventListener('click', () => {
     img.src = "img/realimg.png";
-  })
-
-  img.addEventListener('mouseout', () => {
-    img.src = "img/artimg.png";
   })
 
   // introduction page
@@ -45,6 +48,8 @@ $(document).ready(function () {
   $('.skill').click(function () {
     $(div2).load('skill&experiance.html', () => {
       mobileMenu.classList.toggle('hidden');
+
+      skillDisplayFunc();
     })
   })
 
@@ -57,6 +62,7 @@ $(document).ready(function () {
     })
   })
 
+  // projectlisr object
         let projects = {
             project1: {
             name: 'Realtime Chat App',
@@ -163,6 +169,7 @@ $(document).ready(function () {
             }
         }
 
+        // projectlist display function
         const projectDisplayFunc = () => {
         let projectcontainer = document.querySelector('#projectcontainer');
 
@@ -175,6 +182,42 @@ $(document).ready(function () {
           <a target="_blank" href="${project.openlink}"><button class="btn bg-gray-900 py-2 px-4 rounded text-blue-500">Open Project</button></a>
       </div>`
       })
+    }
+
+
+    // skills display function
+    const skillDisplayFunc = () => {
+      let progdiv = document.querySelector('#progdiv');
+        let frontdiv = document.querySelector('#frontdiv');
+        let backdiv = document.querySelector('#backdiv');
+        let datadiv = document.querySelector('#datadiv');
+        let tooldiv = document.querySelector('#tooldiv');
+
+        let prog_lang_arr = ['C Programming', 'Java', 'Data Structure', 'Object Orianted Programming'];
+        let frontend_arr = ['HTML5', 'CSS3', 'JavaScript', 'AJAX', 'JQuery', 'Bootstrap', 'TailwindCSS'];
+        let backend_arr = ['Node.js', 'Express.js'];
+        let database_arr = ['MySQL', 'MongoDB', 'PostgreSQL'];
+        let tool_arr = ['Git', 'GitHub', 'Msword', 'PowerPoint', 'ChatGPT'];
+
+        prog_lang_arr.forEach(i => {
+            progdiv.innerHTML += `<p class="bg-gray-800 px-3 py-2 rounded m-1 flex">${i}</p>`;
+        })
+
+        frontend_arr.forEach(i => {
+            frontdiv.innerHTML += `<p class="bg-gray-800 px-3 py-2 rounded m-1 flex">${i}</p>`;
+        })
+
+        backend_arr.forEach(i => {
+            backdiv.innerHTML += `<p class="bg-gray-800 px-3 py-2 rounded m-1 flex">${i}</p>`;
+        })
+
+        database_arr.forEach(i => {
+            datadiv.innerHTML += `<p class="bg-gray-800 px-3 py-2 rounded m-1 flex">${i}</p>`;
+        })
+
+        tool_arr.forEach(i => {
+            tooldiv.innerHTML += `<p class="bg-gray-800 text-white px-3 py-2 rounded m-1 flex">${i}</p>`;
+        })
     }
 
 })
