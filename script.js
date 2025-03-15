@@ -55,7 +55,7 @@ $(document).ready(function () {
         let projects = {
             project1: {
             name: 'Realtime Chat App',
-            description: 'Developed a real-time chat web application utilizing HTML, CSS, JavaScript, and TailwindCSS for a responsive and user-friendly design. Implemented backend functionality using Node.js and Express.js, with real-time communication powered by Socket.IO. Designed features to ensure seamless, instant messaging with a focus on performance and reliability.',
+            description: 'Developed a real-time chat web application. Implemented backend functionality using Node.js and Express.js, with real-time communication powered by Socket.IO. Designed features to ensure seamless, instant messaging with a focus on performance and reliability.',
             tech: 'HTML, CSS, JavaScript, Tailwind CSS, Node.js, Express.js, SocketIO',
             codelink: '#',
             openlink: '#'
@@ -63,7 +63,7 @@ $(document).ready(function () {
 
             project2: {
                 name: 'Student Things',
-                description: 'This is my full stack project. Where I have used HTML, CSS, JavaScript with Bootstrap framework as frontend technology. For backend I used Node.js, Express.js. MongoDB as a database. in this website students can register/login. Students can upload projects, update/delete the profile, view other students project likes them and their ID, update/delete their own projects and many more things which helps to improve my backend skills.',
+                description: 'This is my full stack project. in this website students can register/login. Students can upload projects, update/delete the profile, view other students project likes them and their ID, update/delete their own projects and many more things which helps to improve my backend skills.',
                 tech: 'HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB',
                 codelink: '#',
                 openlink: '#'
@@ -79,7 +79,7 @@ $(document).ready(function () {
 
             project4: {
                 name: "Spotify Clone",
-                description: "I developed a Spotify clone using HTML, CSS, and JavaScript, incorporating AJAX for seamless data fetching. The app mimics core Spotify features, including real-time song loading and playback without page reloads.",
+                description: "I developed a Spotify clone. The app mimics core Spotify features, including real-time song loading and playback without page reloads.",
                 tech: "HTML, CSS, JavaScript",
                 codelink: "https://github.com/NIRMAL-PRAJAPATI/spotify-clone",
                 openlink: "https://nirmal-prajapati.github.io/spotify-clone/"
@@ -87,7 +87,7 @@ $(document).ready(function () {
 
             project5: {
                 name: "Online Casino Game",
-                description: "I developed an online casino game using HTML, CSS, and JavaScript, featuring an engaging interface and interactive gameplay. The game allows users to experience virtual casino entertainment with smooth animations and dynamic user interaction.",
+                description: "I developed an online casino game featuring an engaging interface and interactive gameplay. The game allows users to experience virtual casino entertainment with smooth animations and dynamic user interaction.",
                 tech: "HTML, CSS, JavaScript, Bootstrap",
                 codelink: "https://github.com/NIRMAL-PRAJAPATI/online-casino-game",
                 openlink: "https://nirmal-prajapati.github.io/online-casino-game/"
@@ -127,7 +127,7 @@ $(document).ready(function () {
 
             project10: {
                 name: "Realtime Clock",
-                description: "a real-time digital clock using HTML, CSS, and JavaScript, featuring a sleek design that displays the current time dynamically. Additionally, the clock includes special date reminders, ensuring users never miss important events. This project combines functionality with aesthetics, providing a practical tool for everyday use.",
+                description: "a real-time digital clock featuring a sleek design that displays the current time dynamically. Additionally, the clock includes special date reminders, ensuring users never miss important events. This project combines functionality with aesthetics, providing a practical tool for everyday use.",
                 tech: "HTML, CSS, JavaScript, Bootstrap",
                 codelink: "https://github.com/NIRMAL-PRAJAPATI/clock_world.github.io",
                 openlink: "https://nirmal-prajapati.github.io/clock_world.github.io/"
@@ -143,7 +143,7 @@ $(document).ready(function () {
 
             project12: {
                 name: "Joke Generator",
-                description: "This dynamic joke generator page, built with HTML, CSS, and JavaScript, delivers a fresh dose of humor at the click of a button. It seamlessly fetches and displays random jokes, providing a fun and engaging user experience.",
+                description: "This dynamic joke generator page, delivers a fresh dose of humor at the click of a button. It seamlessly fetches and displays random jokes, providing a fun and engaging user experience.",
                 tech: "HTML, CSS, JavaScript, Bootstrap",
                 codelink: "https://github.com/NIRMAL-PRAJAPATI/jokes-generator.github.io",
                 openlink: "https://nirmal-prajapati.github.io/jokes-generator.github.io/"
