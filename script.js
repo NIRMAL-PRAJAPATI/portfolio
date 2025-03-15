@@ -5,13 +5,6 @@ $(document).ready(function () {
   const menuBtn = document.getElementById('menu-btn');
   const mobileMenu = document.getElementById('mobile-menu');
 
-  // see image indication
-  let indication = document.querySelector('#seeImageIndication');
-
-  setTimeout(() => {
-    indication.style.display = 'none';
-  }, 7000);
-
   // mail setter
   emailbtn.addEventListener("click", function() {
     const email = "nirmalprajapati727@gmail.com";
@@ -27,10 +20,6 @@ $(document).ready(function () {
   menuBtn.addEventListener('click', () => {
     mobileMenu.classList.toggle('hidden');
   });
-
-  img.addEventListener('click', () => {
-    img.src = "img/realimg.png";
-  })
 
   // introduction page
   $('.intro').click(() => {
@@ -197,7 +186,7 @@ $(document).ready(function () {
         let frontend_arr = ['HTML5', 'CSS3', 'JavaScript', 'AJAX', 'JQuery', 'Bootstrap', 'TailwindCSS'];
         let backend_arr = ['Node.js', 'Express.js'];
         let database_arr = ['MySQL', 'MongoDB', 'PostgreSQL'];
-        let tool_arr = ['Git', 'GitHub', 'Msword', 'PowerPoint', 'ChatGPT'];
+        let tool_arr = ['Git', 'GitHub', 'Msword', 'PowerPoint', 'ChatGPT', 'V0 by Vercel'];
 
         prog_lang_arr.forEach(i => {
             progdiv.innerHTML += `<p class="bg-gray-800 px-3 py-2 rounded m-1 flex">${i}</p>`;

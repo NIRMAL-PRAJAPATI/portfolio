@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+
   <nav class="bg-gray-900 px-2 py-4 md:py-4 z-20 w-[100%] fixed">
     <div class="container mx-auto flex justify-between items-center">
       <!-- Logo -->
@@ -17,7 +18,7 @@
       </div>
       <!-- Menu Items (hidden on mobile) -->
       <div class="hidden md:flex space-x-4">
-        <a onclick="window.location.reload()" class="intro text-gray-300 hover:text-white px-2 cursor-pointer">Introduction</a>
+        <a onclick="window.location.reload()" class="intro text-gray-300 hover:text-white px-2">Introduction</a>
         <a href="#div2" class="edu text-gray-300 hover:text-white px-2">Education</a>
         <a href="#div2" class="skill text-gray-300 hover:text-white px-2">Skills & Experience</a>
         <a href="#div2" class="project text-gray-300 hover:text-white px-2">Projects</a>
@@ -25,24 +26,17 @@
       <!-- Mobile Menu Button -->
       <div class="md:hidden">
         <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
-          <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
         </button>
       </div>
     </div>
     <!-- Mobile Menu (hidden by default) -->
     <div id="mobile-menu" class="hidden md:hidden mt-6 text-1xl">
-      <a onclick="window.location.reload()" class="intro text-gray-300 hover:text-white px-2 cursor-pointer">Introduction</a>
+      <a onclick="window.location.reload()" class="intro block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Introduction</a>
       <a href="#div2" class="edu block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Education</a>
       <a href="#div2" class="skill block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Skills & Experience</a>
       <a href="#div2" class="project block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Project</a>
     </div>
-    
-    <!-- see image indication -->
-    <div class="absolute top-[60px] w-[99%]">
-      <p id="seeImageIndication" class="bg-gray-800 rounded-sm p-4 text-white">Click the profile image to see the actual image.</p>
-      </div>
   </nav>
 
   <main>
@@ -54,10 +48,10 @@
         <div class="w-[100%] h-[100%] bg-gray-700 rounded-full"></div>
       </div>
       
-    <img id="nirmalimg" src="img/artimg.png">
+    <img id="nirmalimg" src="img/realimg.png">
     <div id="introdiv" class="md:mt-12 z-10">
     <h1 id="name" class="text-4xl md:text-6xl font-bold my-5 mb:my-12 mr-12 pr-5"><p class="md:text-5xl mb-3 text-blue-500">I am,</p>Nirmal Prajapati</h1>
-    <p class="text-gray-400">Hello, and welcome to my portfolio! I am Nirmal Prajapati, a Computer Science student with a passion for technology, problem-solving, and innovation. Throughout my academic journey, I have gained hands-on experience in various areas of computer science, including software development, algorithms, and data structures, as well as web development.</p>
+    <p class="text-gray-400">Hello, and welcome to my portfolio! I am Nirmal Prajapati, a Information Technology student with a passion for technology, problem-solving, and innovation. Throughout my academic journey, I have gained hands-on experience in various areas of computer science, including software development, algorithms, and data structures, as well as web development.</p>
     <div class="md:flex mt-10 justify-center text-gray-500 text-lg">
 <button id="emailbtn" class="flex text-white bg-gray-900 m-2 py-3 px-5 rounded"><img src="img/email.png" width="25">&nbsp;Email Me</button>
 <a href="img/nirmal resume.pdf" download="nirmal resume.pdf"><button class="flex text-white bg-gray-900 m-2 py-3 px-5 rounded"><img src="img/download.png" width="25">&nbsp;Download Resume</button></a>
@@ -78,17 +72,13 @@
       <div>
           <h1 class="text-white font-bold text-4xl flex justify-center tracking-wide" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About Me</h1>
           <img src="img/model3.svg" class="w-40 md:w-[200px] -mt-[60px] -mb-7 md:ml-20">
-          <p class="bg-gray-900 text-gray-200 m-3 md:mx-12 p-5 md:p-12 rounded md:rounded-3xl text-lg" style="text-align: justify;"> &nbsp;&nbsp;&nbsp;I am Nirmal Prajapati, currently pursuing a Bachelor of Engineering in Information Technology from a government college in modasa. I am actively seeking internship opportunities, whether remote or local, where I can apply and expand my technical skills in real-world projects. My journey toward becoming a full-stack developer has provided me with a robust understanding of frontend development, along with hands-on experience in creating responsive, user-friendly websites. I am well-versed in HTML, CSS, JavaScript, and frameworks such as Bootstrap, and I have successfully integrated APIs into dynamic web applications to enhance functionality and user interaction.
+          <p class="bg-gray-900 text-gray-300 m-3 md:mx-12 p-5 md:p-12 rounded md:rounded-3xl" style="text-align: justify;"> &nbsp;&nbsp;&nbsp;I am Nirmal Prajapati, a passionate and dedicated Full-Stack Developer pursuing a <strong>Bachelor of Engineering</strong> in Information Technology at GEC, Modasa. With expertise in frontend technologies like <strong>HTML, CSS, JavaScript, TailwindCSS, and Bootstrap,</strong> as well as backend development using <strong>Node.js, Express.js, MongoDB, and PostgreSQL,</strong> I enjoy building efficient and dynamic web applications. My problem-solving skills in Java with DSA help me approach challenges analytically and develop optimized solutions.
             <br><br>
-            I have developed strong problem-solving skills, which allow me to tackle complex challenges efficiently. I am always eager to learn and adapt to new technologies, and I enjoy working in collaborative environments where I can contribute as a valuable team member. I have a keen eye for detail, which ensures that my work meets high standards of quality and performance.
-            <br>
-            <img src="img/model8.svg" class="mx-auto mt-3 -mb-10 opacity-70 w-[80%] md:w-[60%] lg:w-[40%]">
-            <br>
-            Beyond frontend development, I am expanding my knowledge base into backend technologies as I work towards becoming a well-rounded full-stack developer. I am particularly interested in exploring databases, server-side logic, and cloud services to gain a comprehensive understanding of web development. My communication skills, coupled with my technical expertise, enable me to articulate ideas effectively and collaborate with cross-functional teams.
+            I have worked on several individual and group projects, including a <strong>real-time chat web application with a chatbot, a Full-Stack Student Things project, and a Full-Stack E-commerce service provider website.</strong> Additionally, I collaborated on a business comparison e-commerce platform and a Hinduism website, gaining valuable experience in teamwork and project execution.
+            <img src="img/model8.svg" class="mx-auto -mb-2 opacity-70 w-[80%] md:w-[60%] lg:w-[40%]">
+            Beyond my academic projects, I have professional experience <strong>working on a client project with a team</strong>, where I contributed as a frontend developer using HTML, CSS, JavaScript, and Bootstrap. This experience enhanced my ability to work in a collaborative environment and deliver high-quality user interfaces.
             <br><br>
-            I have also built a portfolio that showcases my various projects, each highlighting my skills in responsive design, dynamic content integration, and user experience optimization. Whether it's crafting an interactive website, working with APIs to fetch real-time data, or enhancing the performance of web applications, my goal is to contribute impactful solutions to any project I am involved in.
-            <br><br>
-            I am excited to bring my passion for coding, problem-solving, and teamwork to an organization where I can further develop my expertise while contributing to innovative solutions. I am confident that my dedication to learning, coupled with my ability to communicate effectively, makes me a valuable asset to any team. I look forward to the opportunity to leverage my technical and communication skills to drive success and deliver impactful results.
+            Currently, I am actively working on two projects, constantly improving my skills and gaining hands-on experience. My goal is to become a proficient Full-Stack Developer and secure a good internship in web development to further refine my expertise and contribute to impactful projects. Based in Ahmedabad, I am always eager to learn, explore new technologies, and push my boundaries in the ever-evolving field of web development.
           </p>
 
           <div class="flex flex-wrap justify-center text-white text-gray-400 text-lg mt-12">
@@ -107,9 +97,9 @@
   </main>
 
   <footer class="flex justify-center bg-gray-900 text-gray-400 flex-wrap py-5">
-    <a href="#div1" class="mx-4 my-2">Introduction</a>
-    <a href="#div2" class="skill mx-4 my-2">Skills & Experiance</a>
+    <a onclick="window.location.reload()" class="intro mx-4 my-2">Introduction</a>
     <a href="#div2" class="edu mx-4 my-2">Education</a>
+    <a href="#div2" class="skill mx-4 my-2">Skills & Experiance</a>
     <a href="#div2" class="project mx-4 my-2">Project</a>
   </footer>
 
