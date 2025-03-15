@@ -46,14 +46,6 @@ body {
     width: 80%;
     height: 100%;
   }
-
-  #name {
-    width: 100%;
-    overflow-y: scroll;
-    text-wrap: nowrap;
-    margin: 20px 0px;
-    padding: 0;
-  }
 }
 
 /* divider */

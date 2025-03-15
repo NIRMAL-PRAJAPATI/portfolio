@@ -163,7 +163,7 @@ $(document).ready(function () {
         let projectcontainer = document.querySelector('#projectcontainer');
 
         Object.values(projects).forEach(project => {
-          projectcontainer.innerHTML += `<div class="text-white bg-gray-800 m-5 p-5 rounded" style="background-color: rgb(25, 38, 51, 0.644);">
+          projectcontainer.innerHTML += `<div class="text-white bg-gray-800 m-2 md:m-5 p-5 rounded" style="background-color: rgb(25, 38, 51, 0.644);">
           <h1 class="text-2xl mb-2 font-bold">${project.name}</h1>
           <p class="text-gray-400 mb-2 text-sm">${project.description}</p>
           <i class="ml-2 text-gray-300">${project.tech}</i><br>
