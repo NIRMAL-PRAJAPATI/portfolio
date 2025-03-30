@@ -56,14 +56,14 @@ $(document).ready(function () {
             project1: {
             name: 'Realtime Chat App',
             description: 'Developed a real-time chat web application. Implemented backend functionality using Node.js and Express.js, with real-time communication powered by Socket.IO. Designed features to ensure seamless, instant messaging with a focus on performance and reliability.',
-            tech: 'HTML, CSS, JavaScript, Tailwind CSS, Node.js, Express.js, SocketIO',
+            tech: 'HTML, CSS, JavaScript, Tailwind CSS, Node.js, Express.js, SocketIO, PostgreSQL',
             codelink: '#',
             openlink: '#'
         },
 
             project2: {
                 name: 'Student Things',
-                description: 'This is my full stack project. in this website students can register/login. Students can upload projects, update/delete the profile, view other students project likes them and their ID, update/delete their own projects and many more things which helps to improve my backend skills.',
+                description: 'This is my full-stack project, where students can register and log in. They can upload projects, update or delete their profiles, view projects uploaded by other students, like them, and see their IDs. Additionally, students can update or delete their own projects and perform various other actions that enhance my backend development skills.',
                 tech: 'HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB',
                 codelink: '#',
                 openlink: '#'
@@ -71,7 +71,7 @@ $(document).ready(function () {
 
             project3: {
                 name: 'Nationalist',
-                description: "This website serves as a comprehensive guide to India, offering detailed information about its states, cities, political landscape, and renowned cultural and historical highlights. Explore India's rich diversity and discover the key elements that define its uniqueness.",
+                description: "This website is a comprehensive guide to India, providing in-depth information about its states, cities, political landscape, and rich cultural and historical heritage. Explore India's incredible diversity and uncover the key elements that make it truly unique.",
                 tech: "HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js",
                 codelink: "https://github.com/NIRMAL-PRAJAPATI/nationalist",
                 openlink: "https://nirmal-prajapati.github.io/nationalist/"
