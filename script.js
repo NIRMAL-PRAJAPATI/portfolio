@@ -65,8 +65,8 @@ $(document).ready(function () {
                 name: 'Student Things',
                 description: 'This is my full-stack project, where students can register and log in. They can upload projects, update or delete their profiles, view projects uploaded by other students, like them, and see their IDs. Additionally, students can update or delete their own projects and perform various other actions that enhance my backend development skills.',
                 tech: 'HTML, CSS, JavaScript, Bootstrap, Node.js, Express.js, MongoDB',
-                codelink: '#',
-                openlink: '#'
+                codelink: 'https://github.com/NIRMAL-PRAJAPATI/student-things',
+                openlink: 'https://github.com/NIRMAL-PRAJAPATI/student-things'
             },
 
             project3: {
