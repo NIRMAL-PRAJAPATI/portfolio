@@ -10,39 +10,35 @@
 </head>
 <body>
 
-  <nav class="bg-gray-900 px-2 py-4 md:py-4 z-20 w-[100%] fixed">
+  <nav class="bg-gray-900 shadow-lg px-2 py-4 md:py-4 fixed w-full z-50">
     <div class="container mx-auto flex justify-between items-center">
-      <!-- Logo -->
       <div class="text-white font-bold text-xl">
         <img src="img/logo.png" width="150">
       </div>
-      <!-- Menu Items (hidden on mobile) -->
       <div class="hidden md:flex space-x-4">
-        <a onclick="window.location.reload()" class="intro text-gray-300 hover:text-white px-2">Introduction</a>
-        <a href="#div2" class="edu text-gray-300 hover:text-white px-2">Education</a>
-        <a href="#div2" class="skill text-gray-300 hover:text-white px-2">Skills & Experience</a>
-        <a href="#div2" class="project text-gray-300 hover:text-white px-2">Projects</a>
+        <a href="#intro" class="text-gray-300 hover:text-white px-2">Introduction</a>
+        <a href="#education" class="text-gray-300 hover:text-white px-2">Education</a>
+        <a href="#skills" class="text-gray-300 hover:text-white px-2">Skills & Experience</a>
+        <a href="#projects" class="text-gray-300 hover:text-white px-2">Projects</a>
       </div>
-      <!-- Mobile Menu Button -->
       <div class="md:hidden">
-        <button id="menu-btn" class="text-gray-300 hover:text-white focus:outline-none">
-          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-align-right"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
+        <button id="menu-btn" class="text-gray-300 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12H9"/><path d="M21 18H7"/><path d="M21 6H3"/></svg>
         </button>
       </div>
     </div>
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobile-menu" class="hidden md:hidden mt-6 text-1xl">
-      <a onclick="window.location.reload()" class="intro block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Introduction</a>
-      <a href="#div2" class="edu block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Education</a>
-      <a href="#div2" class="skill block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Skills & Experience</a>
-      <a href="#div2" class="project block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Project</a>
+    <div id="mobile-menu" class="hidden md:hidden mt-6">
+      <a href="#intro" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Introduction</a>
+      <a href="#education" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Education</a>
+      <a href="#skills" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Skills & Experience</a>
+      <a href="#projects" class="block px-4 py-2 text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
     </div>
   </nav>
 
   <main>
     <img src="img/model5.svg" class="absolute w-[250px] right-10 mt-20 md:ml-20 opacity-30" style="transform: rotate(340deg);">
     <!-- div 1 -->
-  <div id="div1" class="text-white">
+  <div id="div1" class="text-white" data-aos="fade-up">
     <div id="aftermain" class="md:flex text-center md:justify-between pt-2">
       <div class="absolute w-[65%] h-[300px] md:h-[370px] rounded-full shadow-lg -mt-3 z-0 p-8" style="background-color: #004a5c2d;">
         <div class="w-[100%] h-[100%] bg-gray-700 rounded-full"></div>
@@ -50,8 +46,8 @@
       
     <img id="nirmalimg" src="img/realimg.png">
     <div id="introdiv" class="md:mt-12 z-10">
-    <h1 id="name" class="text-4xl md:text-6xl font-bold my-5 mb:my-12 mx-auto pr-5"><p class="md:text-5xl mb-3 text-blue-500">I am,</p>Nirmal Prajapati</h1>
-    <p class="text-gray-400">Hello, and welcome to my portfolio! I am Nirmal Prajapati, a Information Technology student with a passion for technology, problem-solving, and innovation. Throughout my academic journey, I have gained hands-on experience in various areas of computer science, including software development, algorithms, and data structures, as well as web development.</p>
+    <h1 id="name" class="text-4xl md:text-6xl font-bold my-5 mb:my-12 mx-auto pr-5"><p class="md:text-5xl mb-3 text-blue-500 animate-pulse">I am,</p>Nirmal Prajapati</h1>
+    <p class="text-gray-400">An enthusiastic Full-Stack Developer with experience in modern frontend/backend technologies and a passion for building efficient, responsive web applications.</p>
     <div class="md:flex mt-10 justify-center text-gray-500 text-lg">
 <button id="emailbtn" class="flex text-white bg-gray-900 m-2 py-3 px-5 rounded"><img src="img/email.png" width="25">&nbsp;Email Me</button>
 <a href="img/nirmal_prajapati_resume.pdf" download="nirmal resume.pdf"><button class="flex text-white bg-gray-900 m-2 py-3 px-5 rounded"><img src="img/download.png" width="25">&nbsp;Download Resume</button></a>
@@ -70,6 +66,7 @@
    <div id="div2">
     <main>
       <div>
+        <div data-aos="fade-up">
           <h1 class="text-white font-bold text-4xl flex justify-center tracking-wide" style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">About Me</h1>
           <img src="img/model3.svg" class="w-40 md:w-[200px] -mt-[60px] -mb-7 md:ml-20">
           <p class="bg-gray-900 text-gray-300 m-3 md:mx-12 p-5 md:p-12 rounded md:rounded-3xl" style="text-align: justify;"> &nbsp;&nbsp;&nbsp;I am Nirmal Prajapati, a passionate and dedicated Full-Stack Developer pursuing a <strong>Bachelor of Engineering</strong> in Information Technology at GEC, Modasa. With expertise in frontend technologies like <strong>HTML, CSS, JavaScript, TailwindCSS, and Bootstrap,</strong> as well as backend development using <strong>Node.js, Express.js, MongoDB, and PostgreSQL,</strong> I enjoy building efficient and dynamic web applications. My problem-solving skills in Java with DSA help me approach challenges analytically and develop optimized solutions.
@@ -80,15 +77,15 @@
             <br><br>
             Currently, I am actively working on two projects, constantly improving my skills and gaining hands-on experience. My goal is to become a proficient Full-Stack Developer and secure a good internship in web development to further refine my expertise and contribute to impactful projects. Based in Ahmedabad, I am always eager to learn, explore new technologies, and push my boundaries in the ever-evolving field of web development.
           </p>
+          </div>
 
-          <div class="flex flex-wrap justify-center text-white text-gray-400 text-lg mt-12">
+          <div class="flex flex-wrap justify-center text-white text-gray-400 text-lg mt-12" data-aos="fade-up">
             <a target="_blank" href="https://leetcode.com/u/nirmalprajapati4008/" class="flex m-2 rounded bg-gray-800 px-4 py-2"><img src="img/leetcode.png" width="30">&nbsp;Leetcode</a>
             <a target="_blank" href="https://github.com/NIRMAL-PRAJAPATI" class="flex m-2 rounded bg-gray-800 px-4 py-2"><img src="img/github.png" width="30">&nbsp;Github</a>
             <a target="_blank" href="https://www.linkedin.com/in/nirmal-prajapati-b206ba277/" class="flex m-2 rounded bg-gray-800 px-4 py-2"><img src="img/linkedin.png" width="30">&nbsp;LinkedIn</a>
             <a target="_blank" href="https://www.instagram.com/nirmalll.js/" class="flex m-2 rounded bg-gray-800 px-4 py-2"><img src="img/instagram.png" width="30">&nbsp;Instagram</a>
-            <img src="img/model2.svg" class="absolute right-[0%] w-[90px] md:w-[129px]">
           </div>
-          <div class="flex flex-wrap justify-center text-white mt-10">
+          <div class="flex flex-wrap justify-center text-white mt-10" data-aos="fade-up">
             <i class="flex"><img src="img/location.png" width="25"> &nbsp;Ahmedabad, Gujarat, India</i>
           </div>
         </div>
